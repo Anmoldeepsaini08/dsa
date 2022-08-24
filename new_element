@@ -1,0 +1,46 @@
+def sum_(n):
+    
+    sum_of_element = 0
+    for j in str(n):
+        sum_of_element += int(j)
+    return sum_of_element
+
+
+size = int(input())
+enter_element = int(input())
+arr = [0]*size
+for i in range(enter_element):
+   
+    arr[i]= (int(input()))
+new_element = input()
+sum_of_element = sum_(new_element)
+if enter_element == size:
+    print("overflow")
+elif  sum_of_element<=size:
+    arr.insert(int(sum_of_element), int(new_element))
+    
+else:
+
+  
+
+    
+    while True:
+        if sum_of_element >=size:
+
+
+
+            sum_of_element = sum_(sum_of_element)
+
+        else:
+            print("hi")
+            print(sum_of_element)
+            arr.insert(int(sum_of_element-1), int(new_element))
+            break
+
+                      
+                   
+     
+    
+    
+    
+    
